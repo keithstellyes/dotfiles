@@ -1,0 +1,10 @@
+# do a source .profile.shared from your .profile or .bash_profile or w/e
+
+# http://bashrcgenerator.com/
+
+export PS1="\[\033[38;5;40m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;141m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+#####
+
+alias zipls="unzip -l"
+alias l="ls -F"
+alias ..="cd .."
