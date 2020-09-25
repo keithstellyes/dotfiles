@@ -8,3 +8,4 @@ export PS1="\[\033[38;5;40m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\
 alias zipls="unzip -l"
 alias l="ls -F"
 alias ..="cd .."
+alias find-synology="nmap -p 5000 10.0.0.209/24 -oG - | grep '5000/open' | cut -f1 | cut -d ' ' -f 2"
