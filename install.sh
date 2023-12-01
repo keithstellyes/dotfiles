@@ -15,3 +15,9 @@ function install() {
 }
 
 install git neovim tmux gcc 
+
+### Install Neo vim packages ###
+## Install ALE ##
+mkdir -p ~/.local/share/nvim/site/pack/git-plugins/start
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.local/share/nvim/site/pack/git-plugins/start/ale
+################################
