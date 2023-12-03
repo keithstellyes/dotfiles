@@ -12,9 +12,19 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	{"nvim-treesitter/nvim-treesitter",
-	enable=true},
-	{"nvim-telescope/telescope.nvim", dependencies = { 'nvim-lua/plenary.nvim' }
-	}
+	{"nvim-treesitter/nvim-treesitter"},
+	{"nvim-telescope/telescope.nvim", dependencies = { 'nvim-lua/plenary.nvim' }},
+	--{"fynnfluegge/monet.nvim", name = "monet", lazy=false},
+	{"folke/tokyonight.nvim", lazy=false, priority=1000}
 }
 require("lazy").setup(plugins, opts);
+--require("monet").setup({
+--    transparent_background = false,
+--    semantic_tokens = true,
+--    highlight_overrides= {},
+--    color_overrides = {},
+--    styles = {},
+--})
+
+--vim.cmd[[colorscheme monet]]
+vim.cmd[[colorscheme tokyonight-moon]]
