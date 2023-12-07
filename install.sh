@@ -15,3 +15,5 @@ function install() {
 }
 
 install git neovim tmux gcc pwgen
+
+echo "git autocompletion:" 'https://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion'
