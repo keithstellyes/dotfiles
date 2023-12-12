@@ -1,8 +1,6 @@
 # do a source .profile.shared from your .profile or .bash_profile or w/e
 
-# http://bashrcgenerator.com/
-
-export PS1="\[\033[38;5;40m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;141m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;40m\]\u\[\]\[\033[38;5;15m\]:\[\]\[\033[38;5;141m\]\w\[\]\[\033[38;5;15m\] \[\]"
 #####
 export EDITOR="vim"
 nvim --version 2> /dev/null 1> /dev/null && export EDITOR="nvim"
