@@ -10,10 +10,13 @@ function install() {
 	if [ $HAS_BREW == true ]; then
 		brew --install $@
 	elif [ $HAS_PACMAN == true ]; then
-		pacman -S $@
+		pacman -S --needed $@
 	fi
 }
 
 install git neovim tmux gcc pwgen
-
+cp .profile.local ~/
+cp .profile.shared ~/
+mkdir -p ~/.config/nvim/
+cp .config/nvim/init.lua ~/.config/nvim/init.lua
 echo "git autocompletion:" 'https://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion'
