@@ -15,6 +15,8 @@ function install() {
 }
 
 install git neovim tmux gcc pwgen
+# arch by default won't have cjk supoprt
+uname -r | grep arch && install noto-fonts-cjk
 cp .profile.local ~/
 cp .profile.shared ~/
 mkdir -p ~/.config/nvim/
