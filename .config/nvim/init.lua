@@ -38,3 +38,5 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     end,
 })
 vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[set ts=4 sw=4]]
+vim.cmd[[set expandtab]]
